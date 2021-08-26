@@ -1,0 +1,29 @@
+.cart {
+  position: absolute;
+  width: 24rem;
+  height: 34rem;
+  top: 7rem;
+  right: -1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border: $black_border;
+  background-color: $color_white;
+  z-index: 5;
+
+  &__items {
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+  }
+
+  &__message {
+    font-size: 1.8rem;
+    margin: 5rem auto;
+  }
+
+  button {
+    margin-top: auto;
+  }
+}

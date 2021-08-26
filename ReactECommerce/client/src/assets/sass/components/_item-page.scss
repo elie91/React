@@ -1,0 +1,36 @@
+.item_page {
+  display: flex;
+  padding: 4rem 0;
+
+  &__images {
+    flex: 0 0 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__infos {
+    padding-left: 5rem;
+    width: 50rem;
+    font-size: 2rem;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 3.8rem;
+  }
+
+  &__description {
+    padding: 2rem 0;
+  }
+
+  button {
+    width: 100%;
+  }
+}
