@@ -25,16 +25,16 @@ import CookieComponent from "./24-useCookie/CookieComponent"
 import TranslationComponent from "./25-useTranslation/TranslationComponent"
 
 function App() {
-  // return <ToggleComponent />
-  // return <TimeoutComponent />
-  // return <DebounceComponent />
-  // return <UpdateEffectComponent />
+  //return <ToggleComponent />
+  //return <TimeoutComponent />
+  //return <DebounceComponent />
+  //return <UpdateEffectComponent />
   // return <ArrayComponent />
   // return <PreviousComponent />
-  // return <StateWithHistoryComponent />
+  //return <StateWithHistoryComponent />
   // return <StorageComponent />
-  // return <AsyncComponent />
-  // return <FetchComponent />
+  //return <AsyncComponent />
+  //return <FetchComponent />
   // return <ScriptComponent />
   // return <DeepCompareEffectComponent />
   // return <EventListenerComponent />
@@ -49,7 +49,7 @@ function App() {
   // return <DarkModeComponent />
   // return <CopyToClipboardComponent />
   // return <CookieComponent />
-  return <TranslationComponent />
+  //return <TranslationComponent />
 }
 
 export default App
