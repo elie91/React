@@ -1,8 +1,0 @@
-.collections-overview {
-  display: flex;
-  flex-direction: column;
-
-  @include respond(phone) {
-    padding: 0 2rem;
-  }
-}
