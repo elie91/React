@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
-import Autocomplete from "./lib/autocomplete/Autocomplete";
-import Counter from "./lib/counter/Counter";
-import Text from "./lib/text/Text";
+import { MuiSelect } from "./lib";
+import Autocomplete from "./lib/components/autocomplete/Autocomplete";
 
 const genRand = (len: number) => {
   return Math.random()
@@ -15,52 +14,31 @@ const generateAutocompleteOptions = (num: number) => {
   for (let i = 0; i < num; i++) {
     const randomString = genRand(12);
     options.push({
-      key: randomString,
-      text: randomString,
+      id: randomString,
+      label: randomString,
     });
   }
   return options;
 };
 
+const options = generateAutocompleteOptions(1000);
+
 function App() {
-  const [count, setCount] = useState(0);
-
-  const handleControlledChange = (newValue: number) => {
-    setCount(newValue);
-  };
-
-  const handleUncontrolledChange = (newValue: number) => {
-    console.log({ newValue });
-  };
-
-  const options = generateAutocompleteOptions(20000);
+  const [value, setValue] = useState(options[2].id);
   return (
     <div className="App">
       <header className="App-header">
-        <p>Controlled count : {count}</p>
-
-        <Counter value={count} onChange={handleControlledChange}>
-          <Counter.Decrement />
-          <Counter.Label>Controlled counter</Counter.Label>
-          <Counter.Count />
-          <Counter.Increment />
-        </Counter>
-
-        <Counter initialValue={5} onChange={handleUncontrolledChange}>
+        {/*   <Counter initialValue={5} onChange={handleUncontrolledChange}>
           <Counter.Decrement icon="ri-home-5-line" />
           <Counter.Label>Uncontrolled counter</Counter.Label>
           <Counter.Count />
           <Counter.Increment />
-        </Counter>
-
-        <Text id="my-span" as="a">
-          Span
-        </Text>
-
+        </Counter> */}
         <Autocomplete
+          placeholder="My Autocomplete"
           options={options}
-          placeholder="My placeholder"
-          value={options[10].key}
+          value={value}
+          onChange={(value) => setValue(value)}
         />
       </header>
     </div>

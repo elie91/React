@@ -1,0 +1,35 @@
+.button {
+  border-radius: 4px;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #E2E8F0;
+}
+
+.button.blue {
+  background: #3182ce;
+  color: white;
+}
+
+.button.yellow {
+  background: #ECC94B;
+  color: black;
+}
+
+.button.orange {
+  background: #DD6B20;
+  color: white;
+}
+
+.button.red {
+  background: #E53E3E;
+  color: white;
+}
+
+.button.gray {
+  background: #E2E8F0;
+  color: black;
+}
